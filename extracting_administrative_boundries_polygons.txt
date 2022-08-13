@@ -1,0 +1,9 @@
+[out:xml] [timeout:25];
+ {{geocodeArea:Spain}} -> .area_0;
+(
+    node["boundary"="administrative"]["admin_level"="2"]["type"="boundary"](area.area_0);
+    way["boundary"="administrative"]["admin_level"="2"]["type"="boundary"](area.area_0);
+    relation["boundary"="administrative"]["admin_level"="2"]["type"="boundary"](area.area_0);
+);
+(._;>;);
+out body;
